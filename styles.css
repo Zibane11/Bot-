@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-screen {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.info-bar {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.matrix {
+  margin-top: 15px;
+}
+
+/* Atualização para usar classes Bootstrap */
+table {
+  width: 100%;
+  max-width: 500px; /* Aumenta a largura para acomodar a nova coluna */
+  margin: 0 auto;
+}
+
+table th, table td {
+  text-align: center;
+  padding: 5px;
+}
+
+/* Cores para os números */
+table td {
+  color: black; /* Cor preta para os números */
+}
+
+/* Função para aplicar cores aleatórias para o fundo das linhas */
+@for $i from 1 through 10 {
+  .row-color-#{$i} {
+    background-color: #{random-rosa-roxo()};
+  }
+}
+
+/* Função para gerar rosa ou roxo aleatoriamente */
+@function random-rosa-roxo() {
+  @if random(2) == 1 {
+    @return #e91e63; /* Rosa */
+  } @else {
+    @return #9c27b0; /* Roxo */
+  }
+}
