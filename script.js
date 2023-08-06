@@ -4,7 +4,7 @@ const users = [
   { username: 'ducu@gmail.com', password: '3268' },
   { username: 'usuario@gmail.com', password: '123456' },
   { username: 'yucadre', password: '1234' },
-  { username: 'usuario3', password: 'senha3' }
+  { username: 'naldojanuario19@gmail.com', password: '754983' }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
